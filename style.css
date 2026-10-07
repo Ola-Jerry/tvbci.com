@@ -1,1 +1,244 @@
 
+/* TVB CI — Corporate Website */
+
+:root {
+  --black: #090a0d;
+  --dark: #121318;
+  --gold: #d5ad5a;
+  --white: #ffffff;
+  --muted: #b8b8bd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 6%;
+  background: #0c0d10;
+  border-bottom: 1px solid #29251d;
+}
+
+.brand {
+  color: var(--gold);
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 22px;
+}
+
+.site-header nav a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.site-header nav a:hover {
+  color: var(--gold);
+}
+
+/* Hero */
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 6%;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, #38301f 0%, transparent 55%),
+    linear-gradient(145deg, #15161b, #070709);
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 76px);
+  line-height: 1.12;
+  margin: 24px 0;
+  letter-spacing: -1.5px;
+}
+
+.hero-text {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 640px;
+  margin: 0 auto 34px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #111;
+}
+
+.btn-gold:hover {
+  background: #edca81;
+}
+
+.btn-outline {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: #111;
+}
+
+/* Departments */
+
+.departments {
+  padding: 85px 6%;
+  background: var(--dark);
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+}
+
+.section-heading h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  margin: 12px 0;
+}
+
+.section-heading > p:last-child {
+  color: var(--muted);
+}
+
+/* Future department cards */
+
+.department-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.department-card {
+  padding: 30px;
+  border: 1px solid #34302a;
+  border-radius: 16px;
+  background: #1a1b20;
+  transition: 0.2s ease;
+}
+
+.department-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.department-card h3 {
+  color: var(--gold);
+  margin: 12px 0;
+}
+
+.department-card p {
+  color: var(--muted);
+}
+
+.department-card a {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .site-header {
+    padding: 18px 5%;
+  }
+
+  .brand {
+    font-size: 21px;
+  }
+
+  .site-header nav {
+    gap: 12px;
+  }
+
+  .site-header nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 70vh;
+    padding: 75px 22px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .department-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .departments {
+    padding: 65px 20px;
+  }
+}
+
