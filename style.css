@@ -252,6 +252,14 @@ padding: 70px 6% 90px;
     transform: translateY(115px);
   }
 
+.hero .eyebrow {
+  transform: translateY(-70px);
+}
+
+.hero h1 {
+  transform: translateY(-70px);
+}
+  
   .hero-actions {
     transform: translateY(115px);
   }
