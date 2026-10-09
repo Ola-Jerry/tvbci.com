@@ -67,9 +67,10 @@ a {
 .hero {
   min-height: 75vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 140px 6% 90px;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+padding: 70px 6% 90px;
   text-align: center;
   background:
     linear-gradient(
@@ -81,7 +82,7 @@ a {
 .hero-content {
   max-width: 850px;
   margin: 0 auto;
-  transform: translateY(-70px);
+  transform: none;
 }
 
 .eyebrow {
