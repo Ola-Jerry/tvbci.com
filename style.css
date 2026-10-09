@@ -80,7 +80,8 @@ a {
 }
 .hero-content {
   max-width: 850px;
-  margin: auto;
+  margin: 0 auto;
+  transform: translateY(-70px);
 }
 
 .eyebrow {
