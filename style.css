@@ -1,4 +1,3 @@
-
 /* TVB CI — Corporate Website */
 
 :root {
@@ -72,11 +71,14 @@ a {
   justify-content: center;
   padding: 90px 6%;
   text-align: center;
-  background:
-    radial-gradient(circle at top, #38301f 0%, transparent 55%),
-    linear-gradient(145deg, #15161b, #070709);
+  
+background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.48),
+    rgba(0, 0, 0, 0.65)
+  ),
+  url("assets/tvbci-hero.jpg") center center / cover no-repeat;
 }
-
 .hero-content {
   max-width: 850px;
   margin: auto;
