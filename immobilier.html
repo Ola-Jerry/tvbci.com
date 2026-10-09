@@ -20,7 +20,17 @@
     .immo-header{display:flex;justify-content:space-between;align-items:center;padding:22px 6%;background:#090a0e}
     .immo-brand{font-weight:800;color:#d8ae5b;letter-spacing:1px}
     .immo-header a{text-decoration:none;color:#d8ae5b}
-    .immo-hero{text-align:center;padding:75px 20px;background:linear-gradient(135deg,#25221b,#101116)}
+.immo-hero {
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 480px;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.40),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("assets/immobilier-hero.jpg") center center / cover no-repeat;
+}
     .immo-hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:15px auto;max-width:800px}
     .immo-hero p{color:#c7c7c7;max-width:650px;margin:15px auto}
     .immo-label{color:#d8ae5b;font-weight:700;letter-spacing:3px;font-size:13px}
