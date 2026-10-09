@@ -94,7 +94,7 @@ padding: 70px 6% 90px;
 }
 
 .hero h1 {
-  font-size: clamp(38px, 6vw, 76px);
+  font-size: clamp(28px, 5vw, 52px);
   line-height: 1.12;
   margin: 24px 0;
   letter-spacing: -1.5px;
