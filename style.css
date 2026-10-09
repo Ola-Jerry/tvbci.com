@@ -249,7 +249,7 @@ padding: 70px 6% 90px;
 
 @media (max-width: 768px) {
   .hero-text {
-    transform: translateY(155px);
+    transform: translateY(190px);
   }
 
 .hero .eyebrow {
@@ -261,6 +261,6 @@ padding: 70px 6% 90px;
 }
   
   .hero-actions {
-    transform: translateY(155px);
+    transform: translateY(190px);
   }
 }
