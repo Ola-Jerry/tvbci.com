@@ -28,6 +28,44 @@
     .immo-btn{display:inline-block;background:#d8ae5b;color:#111!important;text-decoration:none;font-weight:800;padding:15px 24px;border-radius:9px;margin-top:18px}
     .immo-footer{text-align:center;padding:35px 15px;color:#aaa}
     @media(max-width:600px){.immo-details{grid-template-columns:1fr}.immo-card-body{padding:20px}}
+  
+.immo-gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
+.immo-gallery > img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.immo-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  padding: 6px;
+}
+
+.immo-thumbnails img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .immo-gallery > img {
+    height: 230px;
+  }
+
+  .immo-thumbnails img {
+    height: 110px;
+  }
+}
+
   </style>
 </head>
 <body class="immo-page">
@@ -47,6 +85,16 @@
   <section class="immo-content">
     <div class="immo-label">NOS OFFRES DISPONIBLES</div>
     <article class="immo-card">
+      
+<div class="immo-gallery">
+  <img src="assets/ADJIN-01.JPG" alt="Terrain à Bingerville Adjin - voie d'accès" loading="lazy">
+
+  <div class="immo-thumbnails">
+    <img src="assets/ADJIN-02.JPG" alt="Terrain à Bingerville Adjin - vue du terrain" loading="lazy">
+    <img src="assets/ADJIN-03.JPG" alt="Terrain à Bingerville Adjin - route du lotissement" loading="lazy">
+  </div>
+</div>
+
       <div class="immo-card-body">
         <h2>Terrains de 500 m² à Bingerville – Adjin</h2>
         <p>Deux lots disponibles dans un lotissement avec vue lagunaire annoncée.</p>
