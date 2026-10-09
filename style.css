@@ -246,3 +246,13 @@ padding: 70px 6% 90px;
   }
 }
 
+
+@media (max-width: 768px) {
+  .hero-text {
+    transform: translateY(115px);
+  }
+
+  .hero-actions {
+    transform: translateY(115px);
+  }
+}
